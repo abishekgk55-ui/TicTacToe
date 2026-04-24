@@ -1,24 +1,20 @@
-package org.example;
-
-public class TicTacToe {
-
-    static char[][] board = new char[3][3];
+public class Main {
 
     public static void main(String[] args) {
-        initializeBoard();
-        printBoard();
-    }
 
-    public static void initializeBoard() {
+        // Create 2D array (board)
+        char[][] board = new char[3][3];
+
+        // Initialize board with '-'
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 board[i][j] = '-';
             }
         }
-    }
 
-    public static void printBoard() {
-        System.out.println("Tic Tac Toe Board:");
+        // Print board
+        System.out.println("Tic-Tac-Toe Board:");
+
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print(board[i][j] + " ");
